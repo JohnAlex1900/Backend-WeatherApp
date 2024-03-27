@@ -1,0 +1,142 @@
+[
+  {
+    "plant_name": "Rose",
+    "scientific_name": "Rosa",
+    "temperature_suitable": "15-25°C",
+    "humidity_suitable": "Moderate",
+    "conditions_suitable": ["Sunlight", "Partial Shade"]
+  },
+  {
+    "plant_name": "Lavender",
+    "scientific_name": "Lavandula",
+    "temperature_suitable": "18-25°C",
+    "humidity_suitable": "Low to Moderate",
+    "conditions_suitable": ["Full Sun"]
+  },
+  {
+    "plant_name": "Tomato",
+    "scientific_name": "Solanum lycopersicum",
+    "temperature_suitable": "18-30°C",
+    "humidity_suitable": "Moderate to High",
+    "conditions_suitable": ["Full Sun"]
+  },
+  {
+    "plant_name": "Basil",
+    "scientific_name": "Ocimum basilicum",
+    "temperature_suitable": "20-25°C",
+    "humidity_suitable": "Moderate to High",
+    "conditions_suitable": ["Sunlight", "Partial Shade"]
+  },
+  {
+    "plant_name": "Succulent",
+    "scientific_name": "Succulenta",
+    "temperature_suitable": "18-24°C",
+    "humidity_suitable": "Low",
+    "conditions_suitable": ["Sunlight"]
+  },
+  {
+    "plant_name": "Orchid",
+    "scientific_name": "Orchidaceae",
+    "temperature_suitable": "15-30°C",
+    "humidity_suitable": "High",
+    "conditions_suitable": ["Filtered Light", "High Humidity"]
+  },
+  {
+    "plant_name": "Snake Plant",
+    "scientific_name": "Sansevieria trifasciata",
+    "temperature_suitable": "15-27°C",
+    "humidity_suitable": "Low to Moderate",
+    "conditions_suitable": ["Low Light", "Moderate Watering"]
+  },
+  {
+    "plant_name": "Spider Plant",
+    "scientific_name": "Chlorophytum comosum",
+    "temperature_suitable": "15-30°C",
+    "humidity_suitable": "Moderate to High",
+    "conditions_suitable": ["Partial Shade", "Regular Watering"]
+  },
+  {
+    "plant_name": "Peace Lily",
+    "scientific_name": "Spathiphyllum",
+    "temperature_suitable": "18-30°C",
+    "humidity_suitable": "High",
+    "conditions_suitable": ["Shade", "High Humidity"]
+  },
+  {
+    "plant_name": "Mint",
+    "scientific_name": "Mentha",
+    "temperature_suitable": "15-25°C",
+    "humidity_suitable": "Moderate to High",
+    "conditions_suitable": ["Partial Shade", "Regular Watering"]
+  },
+  {
+    "plant_name": "Cactus",
+    "scientific_name": "Cactaceae",
+    "temperature_suitable": "20-30°C",
+    "humidity_suitable": "Low",
+    "conditions_suitable": ["Full Sun"]
+  },
+  {
+    "plant_name": "Fern",
+    "scientific_name": "Pteridophyta",
+    "temperature_suitable": "15-25°C",
+    "humidity_suitable": "High",
+    "conditions_suitable": ["Shade", "Regular Watering"]
+  },
+  {
+    "plant_name": "Aloe Vera",
+    "scientific_name": "Aloe barbadensis miller",
+    "temperature_suitable": "15-30°C",
+    "humidity_suitable": "Low to Moderate",
+    "conditions_suitable": ["Sunlight", "Low Watering"]
+  },
+  {
+    "plant_name": "Pothos",
+    "scientific_name": "Epipremnum aureum",
+    "temperature_suitable": "15-30°C",
+    "humidity_suitable": "Moderate",
+    "conditions_suitable": ["Partial Shade", "Regular Watering"]
+  },
+  {
+    "plant_name": "Jade Plant",
+    "scientific_name": "Crassula ovata",
+    "temperature_suitable": "18-24°C",
+    "humidity_suitable": "Low",
+    "conditions_suitable": ["Sunlight", "Infrequent Watering"]
+  },
+  {
+    "plant_name": "Daisy",
+    "scientific_name": "Bellis perennis",
+    "temperature_suitable": "15-25°C",
+    "humidity_suitable": "Moderate",
+    "conditions_suitable": ["Full Sun"]
+  },
+  {
+    "plant_name": "Zinnia",
+    "scientific_name": "Zinnia elegans",
+    "temperature_suitable": "18-30°C",
+    "humidity_suitable": "Moderate",
+    "conditions_suitable": ["Full Sun"]
+  },
+  {
+    "plant_name": "Petunia",
+    "scientific_name": "Petunia",
+    "temperature_suitable": "15-27°C",
+    "humidity_suitable": "Moderate",
+    "conditions_suitable": ["Full Sun"]
+  },
+  {
+    "plant_name": "Marigold",
+    "scientific_name": "Tagetes",
+    "temperature_suitable": "18-27°C",
+    "humidity_suitable": "Moderate",
+    "conditions_suitable": ["Full Sun"]
+  },
+  {
+    "plant_name": "Chrysanthemum",
+    "scientific_name": "Chrysanthemum",
+    "temperature_suitable": "15-25°C",
+    "humidity_suitable": "Moderate",
+    "conditions_suitable": ["Partial Shade", "Regular Watering"]
+  }
+]

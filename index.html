@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <h1>Weather Forecast</h1>
+    <form id="location-form" onsubmit="getWeather()">
+      <label for="location-input">Enter your location:</label>
+      <input type="text" id="location-input" name="location" />
+      <button type="submit">Submit</button>
+    </form>
+    <p style="display: none" id="weather-info">
+      Fetching weather information...
+    </p>
+
+    <script>
+      async function getWeather() {
+        const location = document.getElementById("location-input").value;
+        const ngrok = "https://14bf-41-139-168-163.ngrok-free.app";
+        const response = await fetch(`${ngrok}/weather?location=${location}`);
+        const data = await response.json();
+        const weatherInfo = document.getElementById("weather-info");
+        weatherInfo.textContent = `Current temperature: ${data.main.temp}°C`;
+        weatherInfo.style.display = "inline";
+      }
+    </script>
+  </body>
+</html>
