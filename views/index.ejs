@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>agrictech</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="poppins-regular">
+  <header>
+    <div class="navigation">
+      <div class="logo">/
+        <img src="/logo1.png" alt="logo" width="40px">
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="Register">
+        <a href="#registerForm"><button id="registerbtn">Register</button></a>
+      </div>
+    </div>
+    <div class="heading">
+      <h1>Grow Guardian</h1>
+      <p>Say goodbye to guess work and hello to sustainable agriculture with cropCare.<br> Discover the world
+        in a new way. Join us in revolutionizing farming practices<br> and combating climate change one crop at a time 
+        <br>Start your journey of discovery with us now</p>
+    </div>
+  </header>
+  <div class="know">
+    <div class="did-you-know">
+      <p>Did you know Versatile staple crop,<br> rich in nutrients, with deep cultural<br>  significance, thousands of 
+        varieties,<br> and economic importance globally.</p>
+    </div>
+    <div class="did-you-know">
+      <p>High-protein legumes, diverse varieties,<br> nitrogen-fixing properties, cultural<br> importance, essential for
+         vegetarian diets,<br> and beneficial for health.</p>
+    </div>
+    <div class="did-you-know">
+      <p>Global staple cereal, ancient cultural<br> history, genetic diversity, nutritious,<br> traded commodity, essential 
+        for bread, pasta,<br> and various cuisines.</p>
+    </div>
+  </div>
+  <div class="formSection">
+    <div>
+      <img src="/farmer3.jpg" alt="">
+    </div>
+    <div>
+      <form id="smsForm" action="/send-sms" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+         <label for="location-input">Enter your location:</label><br><br>
+      <input type="text" id="location-input" name="location" /><br><br>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+        <button type="submit">Send SMS</button>
+      </form>
+    </div>
+    <div id="message"></div>
+  </div>
+  <footer>
+    <p>@Tech Gurus</p>
+  </footer>
+  <script>
+    document.getElementById('smsForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      const formData = new FormData(this); // Get form data
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+
+      fetch('/send-sms', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data) // Convert object to JSON string
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to send message.');
+        }
+        return response.json();
+      })
+      .then(result => {
+        if (result.success) {
+          alert('Message sent successfully');
+        } else {
+          alert('Failed to send message. Please try again later.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to send message. Please try again later.');
+      });
+    });
+  </script>
+</body>
+</html>

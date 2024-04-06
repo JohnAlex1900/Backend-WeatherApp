@@ -1,0 +1,157 @@
+*{
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  
+}
+header{
+  background-image: url('/bg1.jpg');
+  background-size: cover;
+  color: white;
+  padding-bottom: 12%;
+
+}
+a{
+  text-decoration: none;
+  margin: 8px;
+  color: white;
+  
+}
+.heading{
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.heading h1{
+  font-size: 60px;
+  color: white;
+}
+.know{
+  background-color:rgb(7, 197, 7) ;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  margin: 4%;
+  margin-top: -5%;
+  color: white;
+}
+.popular-tours{
+  text-align: center;
+
+}
+
+.discovery{
+  background-image: url('/table.webp');
+  color: white;
+  
+}
+.discovery h1{
+  color: white;
+  font-size: 60px;
+}
+.myimages{
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  color: white;
+  background-color: rgb(7, 197, 7);
+  border-radius: 5px;
+  border: none;
+  padding: 12px 50px 12px 50px;
+}
+.formSection {
+  margin:0px 200px 40px 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Adjust form width */
+form {
+  width: 250px; /* Adjust the width as needed */
+}
+
+/* Adjust label and input width */
+label {
+  width: 100%; /* Make label full width */
+  display: block; /* Ensure label is on its own line */
+  text-align: left; /* Align label text to the left */
+  margin-bottom: 10px; /* Add some spacing between labels */
+}
+
+input[type="text"] {
+  width: 100%; /* Make input full width */
+  padding: 5px;
+  border: none; /* Remove border */
+  border-bottom: 1px solid black; /* Add bottom border */
+  outline: none;
+ /* Add some padding for better appearance */
+}
+img{
+  border-radius: 4px;
+}
+footer{
+  background-color: rgb(7, 197, 7);
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+
+
+/* Use a media query to add a breakpoint at 800px:
+@media screen and (max-width: 800px) {
+  header {
+    min-width: 40rem;
+    width: 60% ; 
+    height: 50vh;
+  }
+  #submit-button{
+    
+    width:20%;
+    height: 10vh;
+  }
+}
+/* @media screen and (max-width: 600px) {
+  #quiz-container {
+   
+    width: 60% ; 
+    height: 50vh;
+  }
+  #submit-button{
+    
+    width:20%;
+    height: 10vh;
+  }
+} */
+
+@media screen and (max-width: 450px) {
+  header {
+  
+    width: 160% ; 
+    height: 100%;
+    font-size: 10px;
+  }
+ 
+  main {
+   
+    width: 160% ; 
+    height: 100%;
+    font-size: 10px;
+
+    .firstsection{
+      width: 60% ; 
+      height: 100%;
+      font-size: 10px;
+      
+    }
+  }
+  
+} 
